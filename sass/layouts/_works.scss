@@ -1,0 +1,40 @@
+.works {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+  padding: 94px 0;
+
+  &-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.work-block {
+  position: relative;
+}
+.work-box {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+}
+.work-style {
+  position: absolute;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--bg-white-colour);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
