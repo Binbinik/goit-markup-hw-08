@@ -24,7 +24,7 @@
   <body>
     <!--Шапка сайту-->
 
-    <!-- <header class="head">
+    <header class="head">
       <div class="container head__container">
         <nav class="activation head__nav">
           <a class="logo link activation__logo" href="./index.html"
@@ -43,33 +43,117 @@
         <ul class="sector container__list list">
           <li class="sector__reg">
             <a class="sector__link link" href="mailto:info@devstudio.com"
-              ><svg class="sector__contact" width="16" height="12">
+              ><svg class="sector__contact messege" width="14" height="10">
                 <use href="./images/symbol-defs.svg#icon-konvert"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="sector__reg">
             <a class="sector__link link" href="tel:+380961111111"
-              ><svg class="sector__contact" width="10" height="16">
+              ><svg class="sector__contact smartphone" width="10" height="14">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
+
+        <!-- Mobile menu -->
+
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-open__icon" width="24" height="16">
+            <use href="./images/symbol-defs.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container mob-menu-container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close" data-menu-close>
+              <svg class="menu-close__icon" width="19" height="19">
+                <use href="./images/symbol-defs.svg#icon-close_24px"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-menu list">
+              <li class="mob-menu-menu__item">
+                <a class="mob-menu-menu__link link activ" href="./index.html">Студія</a>
+              </li>
+              <li class="mob-menu-menu__item">
+                <a class="mob-menu-menu__link link" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="mob-menu-menu__item">
+                <a class="mob-menu-menu__link link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu-sector list">
+              <li class="mob-menu-sector__reg">
+                <a class="link activ nomber" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu-sector__reg">
+                <a class="mob-menu-sector__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-soc list">
+              <li class="mob-menu-soc__reg">
+                <a
+                  aria-label="Посилання на інстаграм"
+                  class="mob-menu-soc__link link activ"
+                  href="https://www.instagram.com/"
+                  rel="nofollow noreferer noopener"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-menu-soc__reg">
+                <a
+                  aria-label="Посилання на твітер"
+                  class="mob-menu-soc__link link activ"
+                  href="https://twitter.com/"
+                  rel="nofollow noreferer noopener"
+                  target="_blank"
+                  >Twiter</a
+                >
+              </li>
+              <li class="mob-menu-soc__reg">
+                <a
+                  aria-label="Посилання на фейсбук"
+                  class="mob-menu-soc__link link activ"
+                  href="https://www.facebook.com/"
+                  rel="nofollow noreferer noopener"
+                  target="_blank"
+                  >Fasebook</a
+                >
+              </li>
+              <li class="mob-menu-soc__reg">
+                <a
+                  aria-label="Посилання на лінкедін"
+                  class="mob-menu-soc__link link activ"
+                  href="https://www.linkedin.com/"
+                  rel="nofollow noreferer noopener"
+                  target="_blank"
+                  >Linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!--Головне-->
 
     <main>
-      <!--Секція герой-->
+      <!-- Секція герой-->
 
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero-button button" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
 
       <!--Наші переваги-->
 
@@ -132,15 +216,33 @@
           <h2 class="works-title">Чим ми займаємося</h2>
           <ul class="works-list list">
             <li class="work-block">
-              <img src="./images/img.jpg" alt="Процес розробки" width="370" height="294" />
+              <img
+                srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x"
+                src="./images/img.jpg"
+                alt="Процес розробки"
+                width="370"
+                height="294"
+              />
               <div class="work-box"><h3 class="work-style">Десктопні додатки</h3></div>
             </li>
             <li class="work-block">
-              <img src="./images/img-1.jpg" alt="Процес розробки" width="370" height="294" />
+              <img
+                srcset="./images/img-1.jpg 1x, ./images/img-1-2x.jpg 2x"
+                src="./images/img-1.jpg"
+                alt="Процес розробки"
+                width="370"
+                height="294"
+              />
               <div class="work-box"><h3 class="work-style">Мобільні додатки</h3></div>
             </li>
             <li class="work-block">
-              <img src="./images/img-2.jpg" alt="Процес розробки" width="370" height="294" />
+              <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2-2x.jpg 2x"
+                src="./images/img-2.jpg"
+                alt="Процес розробки"
+                width="370"
+                height="294"
+              />
               <div class="work-box"><h3 class="work-style">Дизайнерські рішення</h3></div>
             </li>
           </ul>
@@ -154,7 +256,21 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-block">
-              <img src="./images/igor.jpg" alt="Чоловік" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/igor.jpg 1x, ./images/igor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/igor-tab.jpg 1x, ./images/igor-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/igor-mob.jpg 1x, ./images/igor-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/igor-mob.jpg" alt="Чоловік" width="450" height="260" />
+              </picture>
               <h3 class="member-title">Ігор Дем'яненко</h3>
               <p class="member-discription">Product Designer</p>
               <ul class="social-links list">
@@ -201,7 +317,21 @@
               </ul>
             </li>
             <li class="team-block">
-              <img src="./images/olga.jpg" alt="Жінка" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/olga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/olga-tab.jpg 1x, ./images/olga-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/olga-mob.jpg 1x, ./images/olga-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/olga-mob.jpg" alt="Чоловік" width="450" height="260" />
+              </picture>
               <h3 class="member-title">Ольга Рєпіна</h3>
               <p class="member-discription">Frontend Developer</p>
               <ul class="social-links list">
@@ -248,7 +378,21 @@
               </ul>
             </li>
             <li class="team-block">
-              <img src="./images/mikola.jpg" alt="Чоловік" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/mikola.jpg 1x, ./images/mikola-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mikola-tab.jpg 1x, ./images/mikola-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mikola-mob.jpg 1x, ./images/mikola-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mikola-mob.jpg" alt="Чоловік" width="450" height="260" />
+              </picture>
               <h3 class="member-title">Микола Тарасов</h3>
               <p class="member-discription">Marketing</p>
               <ul class="social-links list">
@@ -295,7 +439,21 @@
               </ul>
             </li>
             <li class="team-block">
-              <img src="./images/mihailo.jpg" alt="Чоловік" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="./images/mihailo.jpg 1x, ./images/mihailo-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mihailo-tab.jpg 1x, ./images/mihailo-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mihailo-mob.jpg 1x, ./images/mihailo-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/mihailo-mob.jpg" alt="Чоловік" width="450" height="260" />
+              </picture>
               <h3 class="member-title">Михайло Єрмаков</h3>
               <p class="member-discription">UI Designer</p>
               <ul class="social-links list">
@@ -347,11 +505,11 @@
 
       <!-- Постійні клієнти -->
 
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container clients__container">
           <h2 class="container__title">Постійні клієнти</h2>
           <ul class="brand-list list">
-            <li>
+            <li class="brand-list_box">
               <a
                 class="brand-list__client link"
                 aria-label="Посилання на компанію YA & CO"
@@ -362,7 +520,7 @@
                   <use href="./images/symbol-defs.svg#icon-yaco"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="brand-list_box">
               <a
                 class="brand-list__client link"
                 aria-label="Посилання на компанію Tagline"
@@ -373,7 +531,7 @@
                   <use href="./images/symbol-defs.svg#icon-tagline"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="brand-list_box">
               <a
                 class="brand-list__client link"
                 aria-label="Посилання на компанію Company"
@@ -384,7 +542,7 @@
                   <use href="./images/symbol-defs.svg#icon-company"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="brand-list_box">
               <a
                 class="brand-list__client link"
                 aria-label="Посилання на компанію Foster Peters"
@@ -395,7 +553,7 @@
                   <use href="./images/symbol-defs.svg#icon-foster_peters"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="brand-list_box">
               <a
                 class="brand-list__client link"
                 aria-label="Посилання на компанію Brand"
@@ -406,7 +564,7 @@
                   <use href="./images/symbol-defs.svg#icon-brand"></use></svg
               ></a>
             </li>
-            <li>
+            <li class="brand-list_box">
               <a
                 class="brand-list__client link"
                 aria-label="Посилання на компанію Company Tag Line"
@@ -419,93 +577,97 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!--Футер-->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
-        <div class="logo-address">
-          <a class="logo link activation__logo" href="./index.html"
-            ><span class="logo__web">Web</span>Studio</a
-          >
-          <address class="address">
-            <ul class="address-list list">
-              <li class="addres-map">
+        <div class="container-tablet">
+          <div class="logo-address">
+            <a class="logo link activation__logo" href="./index.html"
+              ><span class="logo__web">Web</span>Studio</a
+            >
+            <address class="address">
+              <ul class="address-list list">
+                <li class="addres-map">
+                  <a
+                    class="addres map link"
+                    href="https://goo.gl/maps/ksE5KanS6fAbc7rB9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="addres-mail">
+                  <a class="addres mail link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="addres-phone">
+                  <a class="addres phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="invitation">
+            <h3 class="invitation-title">ПРИЄДНУЙТЕСЬ</h3>
+            <ul class="invitation-links list">
+              <li>
                 <a
-                  class="addres map link"
-                  href="https://goo.gl/maps/ksE5KanS6fAbc7rB9"
+                  aria-label="Посилання на інстаграм"
+                  class="invait"
+                  href="https://www.instagram.com/"
+                  rel="nofollow noreferer noopener"
                   target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addres-mail">
-                <a class="addres mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li>
+                <a
+                  aria-label="Посилання на твітер"
+                  class="invait"
+                  href="https://twitter.com/"
+                  rel="nofollow noreferer noopener"
+                  target="_blank"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="addres-phone">
-                <a class="addres phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li>
+                <a
+                  aria-label="Посилання на фейсбук"
+                  class="invait"
+                  href="https://www.facebook.com/"
+                  rel="nofollow noreferer noopener"
+                  target="_blank"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  aria-label="Посилання на лінкедін"
+                  class="invait"
+                  href="https://www.linkedin.com/"
+                  rel="nofollow noreferer noopener"
+                  target="_blank"
+                >
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="invitation">
-          <h3 class="invitation-title">ПРИЄДНУЙТЕСЬ</h3>
-          <ul class="invitation-links list">
-            <li>
-              <a
-                aria-label="Посилання на інстаграм"
-                class="invait"
-                href="https://www.instagram.com/"
-                rel="nofollow noreferer noopener"
-                target="_blank"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                aria-label="Посилання на твітер"
-                class="invait"
-                href="https://twitter.com/"
-                rel="nofollow noreferer noopener"
-                target="_blank"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                aria-label="Посилання на фейсбук"
-                class="invait"
-                href="https://www.facebook.com/"
-                rel="nofollow noreferer noopener"
-                target="_blank"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                aria-label="Посилання на лінкедін"
-                class="invait"
-                href="https://www.linkedin.com/"
-                rel="nofollow noreferer noopener"
-                target="_blank"
-              >
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="mailing">
           <h3 class="mailing-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
@@ -529,7 +691,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Бекдроп та модальне вікно -->
 
@@ -616,5 +778,6 @@
     <!-- Скрипт для модального вікна -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
